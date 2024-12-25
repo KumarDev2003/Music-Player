@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'FAMILY_NAME';
+    font-style: NORMAL_OR_ITALIC;
+    font-weight: NUMERIC_WEIGHT_VALUE;
+    src: url(FONT_FILE_NAME.woff2) format('woff2');
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    background-color: black;
+    color: white;
+} */
+
+.left{
+    width: 25vw;
+    padding: 10px;
+}
+
+.right{
+    width: 75vw;
+    padding: 10px;
+    position: relative;
+}
+
+.home ul li{
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    gap: 12px;
+    width: 17px;
+    list-style: none;
+    padding-top: 14px;
+}
+
+.heading {
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    padding-top: 14px;
+    align-items: center;
+}
+
+.heading img{
+    width: 18px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.footer{
+    padding: 10px;
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer a{
+    color: white;
+}
+
+.library{
+    min-height: 80vh;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* select all children */
+.header *{
+     padding: 8px;
+}
+
+.moodifyPlaylists{
+    /* display: flex; */
+    min-height: 100vh;
+}
+
+.buttons{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpBtn{
+    width: 80px;
+    border-radius: 20px;
+    border-style: none;
+    font-weight: bold;
+    color: grey;
+    background-color: white;
+}
+.signUpBtn:hover{
+    font-size: 15px;
+}
+
+.loginBtn{
+    width: 80px;
+    border-radius: 20px;
+    border-style: none;
+    font-weight: bold;
+    color: grey;
+    background-color: white;
+}
+.loginBtn:hover{
+    font-size: 15px;
+}
+
+/* .playbar{
+    position: absolute;
+    bottom: 15px;
+    background-color: white;
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50px;
+    
+} */
+
+.playbar {
+    position: fixed;
+    bottom: 25px;
+    left: 62.5%;
+    transform: translateX(-51%);
+    background-color: white;
+    width: 65%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.seekbar{
+    position: absolute;
+    height: 3px;
+    width: 97%;
+    border: 2px solid grey;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.circle {
+    position: relative;
+    height: 15px;
+    bottom: 4px;
+    width: 15px;
+    border-radius: 10px;
+    background-color: grey;
+    left: 0%;
+    transition: 0.5s;
+}
+
+.songButtons{
+    display: flex;              /* Use flexbox */
+    justify-content: center;    /* Center content horizontally */
+    align-items: center;
+    gap: 40px;
+}
+
+#backwardBtn{
+    width: 27px;
+}
+
+#playbarBtn{
+    width: 30px;
+}
+
+#fowardBtn{
+    width: 27px;
+
+}
+
+#hamburger{
+    display: none;
+}
+
+#crossBtn{
+    display: none;
+}
+
+@media (max-width: 1400px){
+
+    .left{
+        position: absolute;
+        left: -110%;
+        transition: all .3s;
+        z-index: 1;
+        width: 98vw;
+        margin-right: 5px;
+    }
+
+    .right{
+        width: 100vw;
+    }
+
+    .playbar {
+        position: fixed;
+        bottom: 25px;
+        left: 67%;
+        transform: translateX(-72%);
+        background-color: white;
+        width: 83%;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 20px;
+    }
+
+    #hamburger{
+        display: flex;
+        width: 30px;
+    }
+
+    .hamburgerdisplay{
+        display: flex;
+        gap: 10px;
+    }
+
+    #crossBtn{
+        display: block;
+        width: 30px;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+    }
+
+    .cardContainer {
+        display: flex;
+        max-height: 65vh;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+.songNvolume{
+    display: flex;
+    gap: 15px;
+}
+
+#volumeSeekbar{
+    width: 75px;
+    cursor: pointer;
+}
+
+/* .cardContainer {
+    display: flex;
+    max-height: 65vh;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+} */

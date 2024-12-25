@@ -1,0 +1,169 @@
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+.items-center{
+    align-items: center ;
+}
+
+.bg-black{
+    /* background-color: black; */
+    color: white;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.bg-grey{
+    background-color: grey;
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+.m-1{
+    margin: 5px;
+}
+
+.p-1{
+    padding: 4px;
+}
+
+#arrow{
+    width: 30px;
+}
+
+/* .cardContainer{
+    display: flex;
+}
+
+.card{
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    background-color: #626262;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.play{
+    width: 45px;
+    position: absolute;
+    right: 12px;
+    top: 245px;
+} */
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 53vh;
+    overflow-y: scroll;
+}
+
+.card {
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    background-color: #626262;
+    position: relative;
+    overflow: hidden; /* Ensures the button stays within the card */
+    cursor: pointer;
+}
+
+.card:hover{
+    transition: 0.5s;
+    background-color: rgb(178, 173, 173);
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Initially hide the play button */
+.play {
+    width: 50px;
+    position: absolute;
+    right: 12px;
+    top: 245px;
+    /* transform: translateY(-50%); */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Show play button on card hover */
+.card:hover .play {
+    opacity: 1;
+}
+
+.songList ul {
+    list-style-type: decimal;
+    padding: 5px;
+    margin: 0;
+    background: #626262;
+}
+
+.songList ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures the play button stays on the right */
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: grey;
+    gap: 10px;
+    position: relative;
+}
+
+#music {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.info {
+    flex: 1; /* Takes up the remaining space */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sideBarPlayBtn {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.songButtons img{
+    cursor: pointer;
+}
+
+.playbar{
+    color: grey;
+}
+
+.aboveBar{
+    justify-content: space-between;
+    /* padding-left: 8px; */
+    padding-right: 8px;
+    display: flex;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodifymusic.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img id="crossBtn" src="svgs/cross.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1" >
+                <img width="40px" id = "logo" src="svgs/music-player-svgrepo-com (1).svg" alt="logo">
+                <ul>
+                    <li><img class="invert" src="svgs/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="svgs/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert"  src="svgs/playlist.svg" alt="playlist">
+                    <h3>Your library</h3>
+                </div>
+                <div class="songList">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header bg-grey rounded m-1 p-1">
+                <div class="nav">
+                    <div class="hamburgerdisplay">
+                        <img id="hamburger" src="svgs/hamburger.svg" alt="">
+                        <img id = "arrow" src="svgs/left.svg" alt="">
+                        <img id = "arrow" src="svgs/right.svg" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signUpBtn">Sign up</button>
+                    <button class="loginBtn">Login</button>
+                </div>
+            </div>
+            <div class="moodifyPlaylists bg-grey rounded m-1 p-1">
+                <h1>Moodify Playlist</h1>
+                <div class="cardContainer">
+                    <!-- Will be dynamically loaded by js -->
+                </div>
+                <div class="playbar">
+                    <div class="seekbar"></div>
+                    <div class="circle"></div>
+                    <div class="aboveBar">
+                        <div class="songInfo"></div>
+                        <div class="songNvolume">
+                            <div class="songTime"></div>
+                            <div class="volume">
+                                <img width = "25px" src="svgs/volume.svg" alt="">
+                            </div>
+                            <div class="range">
+                                <input type="range" name="volume" id="volumeSeekbar">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songButtons">
+                        <img id="backwardBtn" src="svgs/backward.svg" alt="">
+                        <img id="playbarBtn" src="svgs/playBarButton.svg" alt="">
+                        <img id="fowardBtn" src="svgs/foward.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
